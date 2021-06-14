@@ -60,11 +60,11 @@ export default function Dialogue() {
 						</div>
 						<div className="border btn-group justify-content-center  mt-4 mx-2 rounded-pill py-3 px-4 d-flex">
 							<button className="btn disabled btn-outline-dark">
-							&lt;&lt;	Previous  Question
+							&lt;&lt;	Previous Question
 							</button>
 							
 							<button className="btn mx-2 px-5 btn-dark">
-								Play         Video 
+								Play Video 
 
  
 							</button>
@@ -95,7 +95,6 @@ export default function Dialogue() {
 							</div>
 						</div>
 					</div>
-
 				</CRow>
 			</CCardBody>
 		</div>
