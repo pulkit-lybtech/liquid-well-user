@@ -66,7 +66,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavItem',
     name: 'Progress Graph',
-    to: '/prgress-graph',
+    to: '/prgress',
     icon: 'cil-chart-pie'
   },
   {
