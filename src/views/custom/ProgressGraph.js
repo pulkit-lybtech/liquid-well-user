@@ -1,6 +1,6 @@
 import { CChartBar } from '@coreui/react-chartjs'
 import React from 'react'
-
+import {CCallout} from '@coreui/react'
 export default function ProgressGraph() {
 	const bar = {
 		labels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7',"Q8", 'Q5', 'Q6', 'Q7',],
@@ -43,7 +43,35 @@ export default function ProgressGraph() {
 			</div>
 			<div className="card-body">
 				<div className="chart-wrapper" >
-					<CChartBar datasets={bar.datasets} options={options} labels={bar.labels	} style={{height:"300px"}}/>
+					<CChartBar datasets={bar.datasets} options={options} labels={bar.labels	} style={{height:"270px"}}/>
+				</div>
+			</div>
+			<div className="card-footer bg-white">
+				<div className="row">
+					<div className="col-md-3 col-lg-2">
+						<CCallout color="info">
+							<h5>Total Questions</h5>
+								3435
+						</CCallout>
+					</div>
+					<div className="col-md-3 col-lg-2">
+						<CCallout color="success">
+							<h5>Correct Answers</h5>
+								3435
+						</CCallout>
+					</div>
+					<div className="col-md-3 col-lg-2">
+						<CCallout color="danger">
+							<h5>Wrong Answers</h5>
+								3435
+						</CCallout>
+					</div>
+					<div className="col-md-3 col-lg-2">
+						<CCallout color="warning">
+							<h5>Accuracy</h5>
+								3435
+						</CCallout>
+					</div>
 				</div>
 			</div>
 		</div>

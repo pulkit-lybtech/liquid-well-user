@@ -4,3 +4,33 @@
 		background-color: rgb(238, 247, 231);
 	}
 }
+
+.dialogue{
+	.col-lg-3{
+		&:first-child{
+			.card, .card-header,.card-footer{
+				background: rgb(244, 255, 251);
+			}
+		}
+	}
+	.card{
+		color: #222;
+		margin-bottom: 1.5rem;
+		height: calc(100% - 1.5rem);
+
+		ul{
+			padding: 0;
+			list-style: none;
+			.list-group-item{
+				color: #555;
+			}
+		}
+
+		h5{
+			margin-bottom: 0;
+			font-size: 1.125rem;
+			text-transform: uppercase;
+
+		}
+	}
+}

@@ -1,9 +1,15 @@
 import React from 'react';
 import Certifications from './views/custom/Certifications';
+import Credits from './views/custom/Credits';
 import Dialogue from './views/custom/Dialogue';
+import DSelector from './views/custom/DSelector';
 import DTor from './views/custom/DTor';
+import DTORselect from './views/custom/DTORselect';
+import EditProfile from './views/custom/EditProfile';
 import ProgressGraph from './views/custom/ProgressGraph';
 import Results from './views/custom/Results';
+import ChangePassword from './views/custom/ChangePassword';
+import Subscription from './views/custom/Subscription';
 
 const Toaster = React.lazy(() => import('./views/notifications/toaster/Toaster'));
 const Tables = React.lazy(() => import('./views/base/tables/Tables'));
@@ -91,6 +97,12 @@ const routes = [
   { path: '/results/', exact: true, name: 'Dialogues ', component: Results },
   { path: '/progress/', exact: true, name: 'Dialogues ', component: ProgressGraph },
   { path: '/dtor/', exact: true, name: 'Dialogues ', component: DTor },
+  { path: '/edit-profile/', exact: true, name: 'Dialogues ', component: EditProfile },
+  { path: '/credits/', exact: true, name: 'Dialogues ', component: Credits },
+  { path: '/dialogue-select/', exact: true, name: 'Dialogues ', component: DSelector },
+  { path: '/DTORselect/', exact: true, name: 'Dialogues ', component: DTORselect },
+  { path: '/change-password/', exact: true, name: 'Dialogues ', component: ChangePassword },
+  { path: '/subscription/', exact: true, name: 'Dialogues ', component: Subscription },
 
 
 ];

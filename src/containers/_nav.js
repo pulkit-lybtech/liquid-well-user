@@ -17,16 +17,48 @@ const _nav =  [
   //   _children: ['Theme']
   // },
   {
-    _tag: 'CSidebarNavItem',
+    _tag: 'CSidebarNavDropdown',
     name: 'Dialogue',
     to: '/dialogue',
     icon: 'cil-drop',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Dialogue View',
+        to: '/dialogue',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Dialogue Select ',
+        to: '/dialogue-select',
+            badge: {
+      color: 'info',
+      text: 'TEST',
+    }
+      },
+    ]
   },
   {
-    _tag: 'CSidebarNavItem',
+    _tag: 'CSidebarNavDropdown',
     name: 'D-Tor',
-    to: '/d-tor',
+    to: '/dtor',
     icon: 'cil-pencil',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'View DTor',
+        to: '/dtor',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'DTor ',
+        to: '/DTORselect',
+            badge: {
+      color: 'info',
+      text: 'TEST',
+    }
+      },
+    ]
   },
   {
     _tag: 'CSidebarNavItem',
