@@ -1,7 +1,9 @@
+import { CProgress,CProgressBar } from '@coreui/react'
 import React from 'react'
 
 export default function DSelector() {
 
+	const counter = 12
 	// const [dialogue, setDialogue] = React.useState([]);
 	const dialogue = [
 		{
@@ -123,43 +125,44 @@ export default function DSelector() {
 					</div>
 					<div className="col-auto">
 						<button className="btn px-4 btn-primary">
-							Search 
+							Search
 						</button>
 					</div>
 				</div>
 			</div>
-		
+
 			<div className="dialogue">
 				<div className="row">
 					{dialogue.map((item, idx) => {
 						return (
-						<div className="col-lg-3 col-xl-3" key="item.name">
-							<div className="card text-center shadow rounded-lg  ">
-								<div className="card-header border-bottom-0 mt-2">
-									<h5> <strong>{item.name}</strong></h5>	
-								</div>
-								<div className="card-body py-0">
-								<ul className="list-group  border-top-0 border-bottom-0 list-group-flush">
-									<li className="list-group-item">
-										<strong>{item.price}</strong>
-									</li>
-									<li className="list-group-item">
-										<strong>{item.que_no}</strong>
-									</li>
-									<li className="list-group-item">
-										<strong>{item.person} Person </strong>
-									</li>
-								</ul>
-								</div>
-								<div className="card-footer border-0">
-									{ (idx === 0) ?  <button className="btn btn-success btn-block"> Try </button> : <button className="btn btn-primary btn-block"> Buy </button> }
+							<div className="col-lg-3 col-xl-3" key="item.name">
+								<div className="card text-center shadow rounded-lg  ">
+									<div className="card-header border-bottom-0 mt-2">
+										<h5> <strong>{item.name}</strong></h5>
+									</div>
+									<div className="card-body py-0">
+										<ul className="list-group  border-top-0 border-bottom-0 list-group-flush">
+											<li className="list-group-item">
+												<strong>{item.price}</strong>
+											</li>
+											<li className="list-group-item">
+												<strong>{item.que_no}</strong>
+											</li>
+											<li className="list-group-item">
+												<strong>{item.person} Person </strong>
+											</li>
+										</ul>
+									</div>
+									<div className="card-footer border-0">
+										{(idx === 0) ? <button className="btn btn-success btn-block"> Try </button> : <button className="btn btn-primary btn-block"> Buy </button>}
+									</div>
 								</div>
 							</div>
-						</div>
 						)
 					})}
-					
+
 				</div>
+			
 			</div>
 		</div>
 	)

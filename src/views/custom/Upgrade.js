@@ -3,7 +3,7 @@ import React from 'react'
 export default function Upgrade() {
 	return (
 		<div>
-			upgrade
+			<h1>upgrade</h1>
 		</div>
 	)
 }

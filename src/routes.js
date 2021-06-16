@@ -10,6 +10,7 @@ import ProgressGraph from './views/custom/ProgressGraph';
 import Results from './views/custom/Results';
 import ChangePassword from './views/custom/ChangePassword';
 import Subscription from './views/custom/Subscription';
+import Upgrade from './views/custom/Upgrade';
 
 const Toaster = React.lazy(() => import('./views/notifications/toaster/Toaster'));
 const Tables = React.lazy(() => import('./views/base/tables/Tables'));
@@ -103,6 +104,7 @@ const routes = [
   { path: '/DTORselect/', exact: true, name: 'Dialogues ', component: DTORselect },
   { path: '/change-password/', exact: true, name: 'Dialogues ', component: ChangePassword },
   { path: '/subscription/', exact: true, name: 'Dialogues ', component: Subscription },
+  { path: '/upgrade/', exact: true, name: 'Dialogues ', component: Upgrade },
 
 
 ];

@@ -33,7 +33,7 @@ export default function ProgressGraph() {
 			<div className="card-header">
 				<div className="d-flex justify-content-between align-items-center ">
 					<h1 className="text-dark">
-						Progress Graph 
+						Progress Graph / E-TRansition Scale 
 					</h1>
 					<div className="btn-group">
 						<button className="btn btn-dark">Print</button>
