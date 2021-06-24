@@ -10,17 +10,14 @@ export default function Dialogue() {
 					Dialogues 
 				</h4>
 				<CRow>
-					<div className="col-lg-8">
-						<div className="card bg-light " style={{minHeight: "220px"}}>
+					<div className="col-lg-12">
+						<div className="card bg-light " style={{minHeight: "480px"}}>
 							
 						</div>
-						
-						<div className="question h4 ">
-							<span className="badge mr-3  badge-light">
-								Q:
-							</span>
-							Why do want to go to Canada? Have you ever been to a South Sunny Country? 
-						</div>
+
+						<div className="col-xl-8 px-0">
+													
+					
 
 						<div className="answers mt-3">
 							<ul className="list-group">
@@ -58,41 +55,44 @@ export default function Dialogue() {
 								</li>
 							</ul>
 						</div>
+
+						<div className="question h4 ">
+							<span className="badge mr-3  badge-light">
+								Q:
+							</span>
+							Why do want to go to Canada? Have you ever been to a South Sunny Country? 
+						</div>
 						<div className="border btn-group justify-content-center  mt-4 mx-2 rounded-pill py-3 px-4 d-flex">
-							<button className="btn disabled btn-outline-dark">
+							<button className="btn rounded disabled btn-outline-dark">
 							&lt;&lt;	Previous Question
 							</button>
 							
-							<button className="btn mx-2 px-5 btn-dark">
+							<button className="btn rounded mx-2 px-5 btn-dark">
 								Play Video 
 
  
 							</button>
 
-							<button className="btn btn-outline-dark">
+							<button className="btn rounded btn-outline-dark">
 								Next Question &gt;&gt; 
 							</button>
 
 						</div>
+
+						</div>
 					</div>
-					<div className="col-lg-4">
-						<div className="card">
-							<div className="card-header ">
-								<h4 className="card-title mb-0">
+					<div className="col-lg-4 mt-3">
+						<div className="card border-light ">
+								<div className="card-body d-flex ">
+								<h4 className="card-title mb-0 h5">
 									Toughness Level 
 								</h4>
-							</div>
-							<div className="list-group list-group-horizontal w-100	">
-								<div className="list-group-item">
-									Beginner
+							
+								<div className="badge ml-3 badge-success">
+								<CIcon size={'md'} name={'cilCheckCircle'} />	Intermediate 
 								</div>
-								<div className="active 	list-group-item">
-								<CIcon size={'lg'} name={'cilCheckCircle'} />	Intermediate 
 								</div>
-								<div className="list-group-item">
-									Professional  
-								</div>
-							</div>
+						
 						</div>
 					</div>
 				</CRow>
