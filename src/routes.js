@@ -11,6 +11,8 @@ import Results from './views/custom/Results';
 import ChangePassword from './views/custom/ChangePassword';
 import Subscription from './views/custom/Subscription';
 import Upgrade from './views/custom/Upgrade';
+import CandidAppoint from './views/custom/CandidAppoint';
+import Appointment from './views/custom/Appointment';
 
 const Toaster = React.lazy(() => import('./views/notifications/toaster/Toaster'));
 const Tables = React.lazy(() => import('./views/base/tables/Tables'));
@@ -105,6 +107,8 @@ const routes = [
   { path: '/change-password/', exact: true, name: 'Dialogues ', component: ChangePassword },
   { path: '/subscription/', exact: true, name: 'Dialogues ', component: Subscription },
   { path: '/upgrade/', exact: true, name: 'Dialogues ', component: Upgrade },
+  { path: '/candid-appoint/', exact: true, name: 'Candidate ', component: CandidAppoint },
+  { path: '/appointment/', exact: true, name: 'Candidate ', component: Appointment },
 
 
 ];

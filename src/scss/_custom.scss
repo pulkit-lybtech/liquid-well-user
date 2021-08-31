@@ -40,3 +40,10 @@
     color: #fff;
     background: darken($dark, 25);
 }
+
+.avail{
+	max-width: 650px;
+	.btn{
+		margin-right: 1rem;
+	}
+}

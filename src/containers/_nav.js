@@ -90,6 +90,30 @@ const _nav =  [
     ],
   },
   {
+    _tag: 'CSidebarNavDropdown',
+    name: 'Candidate',
+    route: '/results',
+    icon: 'cil-puzzle',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Candidate Appointment',
+        to: '/candid-appoint',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Appointments',
+        to: '/appointment',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Calendar',
+        to: '/calendar',
+      },
+     
+    ],
+  },
+  {
     _tag: 'CSidebarNavItem',
     name: 'Certifications',
     to: '/certifications',
